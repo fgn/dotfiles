@@ -1,6 +1,11 @@
 (blink-cursor-mode 0)
 (require 'iso-transl)
 
+;; Non-nil means `display-buffer' should reuse frames. 
+;; If the buffer in question is already displayed in a frame, raise that frame.
+(setq-default display-buffer-reuse-frames t)
+
+
 ;;(add-to-list 'load-path "~/.emacs.d/elpa/yasnippet-20140106.1009/")
 ;;(require 'yasnippet) ;; not yasnippet-bundle
 ;;(yas-global-mode 1)
